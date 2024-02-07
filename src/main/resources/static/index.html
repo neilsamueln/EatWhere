@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Project</title>
+</head>
+<body>
+
+<div class="user-form" id="username-page">
+    <form id="usernameForm">
+        <label for="name">Name:</label>
+        <input type="text" id="username" name="username" required>
+
+        <button type="submit">Enter</button>
+    </form>
+</div>
+
+<div class="sessions-container hidden" id="sessions-page">
+    <div class="invite-container">
+        <h2>Invites</h2>
+        <ul id="invites">
+        </ul>
+    </div>
+    <div class="joined-sessions-container">
+        <h2>Joined Sessions</h2><a class="btn" href="javascript:void(0)" id="create-session">Create Session</a>
+        <ul id="sessions">
+        </ul>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
